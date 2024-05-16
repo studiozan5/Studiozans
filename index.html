@@ -1,338 +1,808 @@
-<!doctype html>
-<html lang="es" data-bs-theme="auto">
-  <head><script src="../assets/js/color-modes.js"></script>
+<!DOCTYPE html>
+<html lang="es">
 
+<head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.111.3">
-    <title>Album example · Bootstrap v5.3</title>
+    <title>Cooperativa Santa Catalina</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
-    
-<link href="./css/bootstrap.min.css" rel="stylesheet">
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
 
-    
-  </head>
-  <body>
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    
-    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
-      <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
-              id="bd-theme"
-              type="button"
-              aria-expanded="false"
-              data-bs-toggle="dropdown"
-              aria-label="Toggle theme (auto)">
-        <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
-        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
-      </button>
-      <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
-        <li>
-          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
-            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#sun-fill"></use></svg>
-            Light
-            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-          </button>
-        </li>
-        <li>
-          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
-            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
-            Dark
-            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-          </button>
-        </li>
-        <li>
-          <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
-            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#circle-half"></use></svg>
-            Auto
-            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-          </button>
-        </li>
-      </ul>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header Start -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3 bg-secondary d-none d-lg-block">
+                <a href="" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
+                    <img class="img-fluid" src="img/Logo_csc1.png" alt="Image">
+                </a>
+            </div>
+            <div class="col-lg-9">
+                <div class="row bg-dark d-none d-lg-flex">
+                    <div class="col-lg-7 text-left text-white">
+                        <div class="h-100 d-inline-flex align-items-center border-right border-primary py-2 px-3">
+                            <i class="fa fa-envelope text-primary mr-2"></i>
+                            <small>contacto@csc.com.pe</small>
+                        </div>
+                        <div class="h-100 d-inline-flex align-items-center py-2 px-2">
+                            <i class="fa fa-phone-alt text-primary mr-2"></i>
+                            <small>+51 53-461197</small>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 text-right">
+                        <div class="d-inline-flex align-items-center pr-2">
+                            <a class="text-primary p-2" href="">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a class="text-primary p-2" href="">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a class="text-primary p-2" href="">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a class="text-primary p-2" href="">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a class="text-primary p-2" href="">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <nav class="navbar navbar-expand-lg bg-white navbar-light p-0">
+                    <a href="" class="navbar-brand d-block d-lg-none">
+                        <h1 class="m-0 display-4 text-primary">CSC</h1>
+                    </a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav mr-auto py-0">
+                            <a href="index.html" class="nav-item nav-link active">Inicio</a>
+                            <a href="nosotros.html" class="nav-item nav-link">Nosotros</a>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Créditos</a>
+                                <div class="dropdown-menu rounded-0 m-0">
+                                    <a href="../creditos/para-ti.html" class="dropdown-item">• Para Ti</a>
+                                    <a href="../creditos/para-negocio.html" class="dropdown-item">• Para Negocio</a>
+                                    <a href="../creditos/para-agro.html" class="dropdown-item">• Para el Agro</a>
+                                </div>
+                            </div>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Ahorros</a>
+                                <div class="dropdown-menu rounded-0 m-0">
+                                    <a href="../ahorros/plazo-fijo.html" class="dropdown-item">• Plazo Fijo</a>
+                                    <a href="../ahorros/movible.html" class="dropdown-item">• Ahorro Movible</a>
+                                </div>
+                            </div>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Servicios</a>
+                                <div class="dropdown-menu rounded-0 m-0">
+                                    <a href="../service/horarios.html" class="dropdown-item">• Horarios de Atención</a>
+                                    <a href="../service/news.html" class="dropdown-item">• Noticias</a>
+                                    <a href="../service/convoca.html" class="dropdown-item">• Convocatorias</a>
+                                    <a href="../service/bienes.html" class="dropdown-item">• Bienes adjudicados</a>
+                                </div>
+                            </div>
+                            <a href="afiliate.html" class="nav-item nav-link">Afíliate</a>
+                            <a href="contact.html" class="nav-item nav-link">Contáctanos</a>
+                        </div>
+                        <a href="https://www.csc.com.pe/webmail/" class="btn btn-primary mr-3 d-none d-lg-block">Email CSC</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
     </div>
+    <!-- Header End -->
 
-    
-<header data-bs-theme="dark">
-  <div class="collapse text-bg-dark" id="navbarHeader">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-8 col-md-7 py-4">
-          <h4>About</h4>
-          <p class="text-body-secondary">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0">
+        <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#header-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#header-carousel" data-slide-to="1"></li>
+                <li data-target="#header-carousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="position-relative w-100 h-100" src="img/carousel-1.jpg" alt="Image">
+                    <div class="carousel-caption d-flex align-items-center justify-content-center">
+                        <div class="p-5" style="width: 100%; max-width: 900px;">
+                        <h5 class="text-primary text-uppercase mb-md-3">Campaña de Aportes</h5> 
+                            <h1 class="display-3 text-white mb-md-4">Todos Vuelven</h1>
+                            <a href="" class="btn btn-primary">Más Info</a> 
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="position-relative w-100 h-100"  src="img/carousel-2.jpg" alt="Image">
+                    
+                    <!--<img class="img-fluid" src="img/carousel-2.jpg" alt="Image">-->
+                    <div class="carousel-caption d-flex align-items-center justify-content-center">
+
+                        <div class="p-5" style="width: 100%; max-width: 900px;">
+                            <h5 class="text-primary text-uppercase mb-md-3">Campaña de Ahorros</h5>
+                            <h1 class="display-3 text-white mb-md-4">TasaMáx</h1>
+                            <a href="" class="btn btn-primary">Más Info</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="position-relative w-100 h-100"  src="img/carousel-3.jpg" alt="Image">
+                    <div class="carousel-caption d-flex align-items-center justify-content-center">
+                        <div class="p-5" style="width: 100%; max-width: 900px;">
+                            <h5 class="text-primary text-uppercase mb-md-3">Campaña de Créditos</h5>
+                            <h1 class="display-3 text-white mb-md-4">Contigo Mamá</h1>
+                            <a href="" class="btn btn-primary">Más Info</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-sm-4 offset-md-1 py-4">
-          <h4>Contact</h4>
-          <ul class="list-unstyled">
-            <li><a href="#" class="text-white">Follow on Twitter</a></li>
-            <li><a href="#" class="text-white">Like on Facebook</a></li>
-            <li><a href="#" class="text-white">Email me</a></li>
-          </ul>
-        </div>
-      </div>
     </div>
-  </div>
-  <div class="navbar navbar-dark bg-dark shadow-sm">
-    <div class="container">
-      <a href="#" class="navbar-brand d-flex align-items-center">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
-        <strong>StudioZans</strong>
+    <!-- Carousel End -->
 
-        <nav class="navbar navbar-expand-lg ">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Dropdown
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled">Disabled</a>
-                </li>
-              </ul>
-              <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-              </form>
+
+    <!-- Contact Info Start -->
+    <div class="container-fluid pb-5 contact-info">
+        <div class="row">
+            <div class="col-lg-4 p-0">
+                <div class="contact-info-item d-flex align-items-center justify-content-center bg-primary text-white py-4 py-lg-0">
+                    <i class="fa fa-3x fa-map-marker-alt text-secondary mr-4"></i>
+                    <div class="">
+                        <h5 class="mb-2">Agencias</h5>
+                        <a class="text-white" href="agencias.html" >Más info aquí</a>
+                    </div>
+                </div>
             </div>
-          </div>
-        </nav>
-    
+            <div class="col-lg-4 p-0">
+                <div class="contact-info-item d-flex align-items-center justify-content-center bg-secondary text-white py-4 py-lg-0">
+                    <i class="fa fa-3x fa-envelope-open text-primary mr-4"></i>
+                    <div class="">
+                        <h5 class="mb-2">Hazte Socio</h5>
+                        <a class="text-white" href="afiliate.html" >Más info aquí</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 p-0">
+                <div class="contact-info-item d-flex align-items-center justify-content-center bg-primary text-white py-4 py-lg-0">
+                    <i class="fa fa-3x fa-phone-alt text-secondary mr-4"></i>
+                    <div class="">
+                        <h5 class="mb-2">Infórmate</h5>
 
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+                         <a class="text-white" href="news/noticias.html" >Más info aquí</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</header>
+    <!-- Contact Info End -->
 
-<div class="container">
-<div id="carouselExampleIndicators" class="carousel slide">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="./img/mkt.jpg" class="d-block w-100" alt=" ">
-      
+
+    <!-- About Start -->
+    <div class="container-fluid py-5 mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="d-flex flex-column align-items-center justify-content-center bg-about rounded h-100 py-5 px-3">
+                        <i class="fa fa-5x fa-award text-primary mb-4"></i>
+                        <h1 class="display-2 text-white mb-2" data-toggle="counter-up">58</h1>
+                        <h2 class="text-white m-0">Años de Experiencia</h2>
+                    </div>
+                </div>
+                <div class="col-lg-7 pt-5 pb-lg-5">
+                    <h6 class="text-secondary font-weight-semi-bold text-uppercase mb-3">Quienes Somos</h6>
+                    <h1 class="mb-4 section-title">Cooperativa de Ahorro y Crédito Santa Catalina</h1>
+                    <h5 class="text-muted font-weight-normal mb-3">Somos una Institución Financiera sin fines de lucro, de fácil acceso para depositar sus ahorros y obtener créditos oportunos.</h5>
+                    <p>Con un crecimiento sostenible y responsabilidad social hacia nuestros asociados y a la comunidad.</p>
+                    <div class="d-flex align-items-center pt-4">
+                        <a href="" class="btn btn-primary mr-5">Saber Más</a>
+                        <button type="button" class="btn-play" data-toggle="modal"
+                            data-src="https://youtu.be/_zKO5lbRK68" data-target="#videoModal">
+                            <span></span>
+                        </button>
+                        <h5 class="font-weight-normal text-white m-0 ml-4 d-none d-sm-block">Play Video</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="carousel-item">
-      <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Second slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#666"></rect><text x="50%" y="50%" fill="#444" dy=".3em">Second slide</text></svg>
+    <!-- About End -->
+
+
+    <!-- Video Modal Start -->
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>        
+                    <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="carousel-item">
-      <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Third slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#555"></rect><text x="50%" y="50%" fill="#333" dy=".3em">Third slide</text></svg>
+    <!-- Video Modal End -->
+
+
+    <!-- Services Start -->
+    <div class="container-fluid bg-service py-5">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h6 class="text-secondary font-weight-semi-bold text-uppercase mb-3">Nuestros servicios financieros</h6>
+                    <h1 class="mb-4 section-title text-white">Ahorros y Créditos</h1>
+                    <p class="text-white">Es el programa mediante el cual se busca dar financiamiento amigable a las pequeñas y mediana empresas del país y generar de esta forma su reactivación.</p>
+                    <a href="" class="btn btn-primary mt-3 py-2 px-4">More Services</a>
+                </div>
+                <div class="col-lg-6 pt-5 pt-lg-0">
+                    <div class="owl-carousel service-carousel2 position-relative">
+                        <div class="d-flex flex-column align-items-center text-center bg-white rounded overflow-hidden pt-4">
+                            <div class="icon-box bg-light text-secondary shadow mt-2 mb-4">
+                                <i class="fa fa-2x fa-hotel"></i>
+                            </div>
+                            <h5 class="font-weight-bold mb-4 px-4">Cooep Mype</h5>
+                            <img src="img/blog-1.jpg" alt="">
+                        </div>
+                        <div class="d-flex flex-column align-items-center text-center bg-white rounded overflow-hidden pt-4">
+                            <div class="icon-box bg-light text-secondary shadow mt-2 mb-4">
+                                <i class="fa fa-2x fa-city"></i>
+                            </div>
+                            <h5 class="font-weight-bold mb-4 px-4">Coope Convenio</h5>
+                            <img src="img/blog-3.jpg" alt="">
+                        </div>
+                        <div class="d-flex flex-column align-items-center text-center bg-white rounded overflow-hidden pt-4">
+                            <div class="icon-box bg-light text-secondary shadow mt-2 mb-4">
+                                <i class="fa fa-2x fa-spa"></i>
+                            </div>
+                            <h5 class="font-weight-bold mb-4 px-4">Coope Consumo</h5>
+                            <img src="img/blog-2.jpg" alt="">
+                        </div>
+                        <div class="d-flex flex-column align-items-center text-center bg-white rounded overflow-hidden pt-4">
+                            <div class="icon-box bg-light text-secondary shadow mt-2 mb-4">
+                                <i class="fa fa-2x fa-spa"></i>
+                            </div>
+                            <h5 class="font-weight-bold mb-4 px-4">Coope Fijo</h5>
+                            <img src="img/blog-2.jpg" alt="">
+                        </div>
+                        <div class="d-flex flex-column align-items-center text-center bg-white rounded overflow-hidden pt-4">
+                            <div class="icon-box bg-light text-secondary shadow mt-2 mb-4">
+                                <i class="fa fa-2x fa-spa"></i>
+                            </div>
+                            <h5 class="font-weight-bold mb-4 px-4">A Sola Firma</h5>
+                            <img src="img/blog-2.jpg" alt="">
+                        </div>
+                        <div class="d-flex flex-column align-items-center text-center bg-white rounded overflow-hidden pt-4">
+                            <div class="icon-box bg-light text-secondary shadow mt-2 mb-4">
+                                <i class="fa fa-2x fa-spa"></i>
+                            </div>
+                            <h5 class="font-weight-bold mb-4 px-4">Coope Casa</h5>
+                            <img src="img/blog-2.jpg" alt="">
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-
-</div>
+    <!-- Services End -->
 
 
-
-<main>
-
-  <section class="py-5 text-center container">
-    <div class="row py-lg-5">
-      <div class="col-lg-6 col-md-8 mx-auto">
-        <h1 class="fw-light">Bienvenidos</h1>
-        <p class="lead text-body-secondary">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
-        <p>
-          <a href="#" class="btn btn-primary my-2">Main call to action</a>
-          <a href="#" class="btn btn-secondary my-2">Secondary action</a>
-        </p>
-      </div>
+    <!-- Features Start
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-7 pt-lg-5 pb-3">
+                    <h6 class="text-secondary font-weight-semi-bold text-uppercase mb-3">Why Choose Us</h6>
+                    <h1 class="mb-4 section-title">25 Years Experience In Cleaning Industry</h1>
+                    <p class="mb-4">Dolores lorem lorem ipsum sit et ipsum. Sadip sea amet diam dolore sed et. Sit rebum labore sit sit ut vero no sit. Et elitr stet dolor sed sit et sed ipsum et kasd ut. Erat duo eos et erat sed diam duo</p>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <h1 class="text-secondary mb-2" data-toggle="counter-up">225</h1>
+                            <h6 class="font-weight-semi-bold mb-sm-4">Our Cleaners</h6>
+                        </div>
+                        <div class="col-sm-4">
+                            <h1 class="text-secondary mb-2" data-toggle="counter-up">1050</h1>
+                            <h6 class="font-weight-semi-bold mb-sm-4">Happy Clients</h6>
+                        </div>
+                        <div class="col-sm-4">
+                            <h1 class="text-secondary mb-2" data-toggle="counter-up">2500</h1>
+                            <h6 class="font-weight-semi-bold mb-sm-4">Projects Done</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5" style="min-height: 400px;">
+                    <div class="position-relative h-100 rounded overflow-hidden">
+                        <img class="position-absolute w-100 h-100" src="img/feature.jpg" style="object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </section>
+    Features End -->
 
-  <div class="album py-5 bg-body-tertiary">
-    <div class="container">
 
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+    <!-- Portfolio Start 
+    <div class="container-fluid bg-portfolio py-5">
+        <div class="container py-5">
+            <div class="row m-0 portfolio-container">
+                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item">
+                    <div class="position-relative overflow-hidden">
+                        <div class="portfolio-img">
+                            <img class="img-fluid w-100" src="img/portfolio-1.jpg" alt="">
+                        </div>
+                        <div class="portfolio-text bg-primary">
+                            <h4 class="font-weight-bold mb-4">Project Name</h4>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <a class="btn btn-sm btn-secondary m-1" href="">
+                                    <i class="fa fa-link"></i>
+                                </a>
+                                <a class="btn btn-sm btn-secondary m-1" href="img/portfolio-1.jpg" data-lightbox="portfolio">
+                                    <i class="fa fa-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <small class="text-body-secondary">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item">
+                    <div class="position-relative overflow-hidden">
+                        <div class="portfolio-img">
+                            <img class="img-fluid w-100" src="img/portfolio-2.jpg" alt="">
+                        </div>
+                        <div class="portfolio-text bg-primary">
+                            <h4 class="font-weight-bold mb-4">Project Name</h4>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <a class="btn btn-sm btn-secondary m-1" href="">
+                                    <i class="fa fa-link"></i>
+                                </a>
+                                <a class="btn btn-sm btn-secondary m-1" href="img/portfolio-2.jpg" data-lightbox="portfolio">
+                                    <i class="fa fa-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <small class="text-body-secondary">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item">
+                    <div class="position-relative overflow-hidden">
+                        <div class="portfolio-img">
+                            <img class="img-fluid w-100" src="img/portfolio-3.jpg" alt="">
+                        </div>
+                        <div class="portfolio-text bg-primary">
+                            <h4 class="font-weight-bold mb-4">Project Name</h4>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <a class="btn btn-sm btn-secondary m-1" href="">
+                                    <i class="fa fa-link"></i>
+                                </a>
+                                <a class="btn btn-sm btn-secondary m-1" href="img/portfolio-3.jpg" data-lightbox="portfolio">
+                                    <i class="fa fa-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <small class="text-body-secondary">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item">
+                    <div class="position-relative overflow-hidden">
+                        <div class="portfolio-img">
+                            <img class="img-fluid w-100" src="img/portfolio-4.jpg" alt="">
+                        </div>
+                        <div class="portfolio-text bg-primary">
+                            <h4 class="font-weight-bold mb-4">Project Name</h4>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <a class="btn btn-sm btn-secondary m-1" href="">
+                                    <i class="fa fa-link"></i>
+                                </a>
+                                <a class="btn btn-sm btn-secondary m-1" href="img/portfolio-4.jpg" data-lightbox="portfolio">
+                                    <i class="fa fa-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <small class="text-body-secondary">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item">
+                    <div class="position-relative overflow-hidden">
+                        <div class="portfolio-img">
+                            <img class="img-fluid w-100" src="img/portfolio-5.jpg" alt="">
+                        </div>
+                        <div class="portfolio-text bg-primary">
+                            <h4 class="font-weight-bold mb-4">Project Name</h4>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <a class="btn btn-sm btn-secondary m-1" href="">
+                                    <i class="fa fa-link"></i>
+                                </a>
+                                <a class="btn btn-sm btn-secondary m-1" href="img/portfolio-5.jpg" data-lightbox="portfolio">
+                                    <i class="fa fa-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <small class="text-body-secondary">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item">
+                    <div class="position-relative overflow-hidden">
+                        <div class="portfolio-img">
+                            <img class="img-fluid w-100" src="img/portfolio-6.jpg" alt="">
+                        </div>
+                        <div class="portfolio-text bg-primary">
+                            <h4 class="font-weight-bold mb-4">Project Name</h4>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <a class="btn btn-sm btn-secondary m-1" href="">
+                                    <i class="fa fa-link"></i>
+                                </a>
+                                <a class="btn btn-sm btn-secondary m-1" href="img/portfolio-6.jpg" data-lightbox="portfolio">
+                                    <i class="fa fa-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <small class="text-body-secondary">9 mins</small>
-              </div>
             </div>
-          </div>
         </div>
-
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-body-secondary">9 mins</small>
-              </div>
-            </div>
-          </div>
         </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-body-secondary">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-body-secondary">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
-
-</main>
-
-<footer class="text-body-secondary py-5">
-  <div class="container">
-    <p class="float-end mb-1">
-      <a href="#">Back to top</a>
-    </p>
-    <p class="mb-1">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-    <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a href="../getting-started/introduction/">getting started guide</a>.</p>
-  </div>
-</footer>
+     Portfolio End -->
 
 
-    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- Team Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row align-items-end mb-4">
+                <div class="col-lg-6">
+                    <h6 class="text-secondary font-weight-semi-bold text-uppercase mb-3">Reactivate y Emprende</h6>
+                    <h1 class="section-title mb-3">Nuestras Campañas de Créditos y Ahorros</h1>
+                </div>
+                <div class="col-lg-6">
+                    <h4 class="font-weight-normal text-muted mb-3">Es el programa mediante el cual se busca dar financiamiento amigable a las pequeñas y mediana empresas del país y generar de esta forma su reactivación.</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="owl-carousel team-carousel position-relative">
+                        <div class="d-flex flex-column text-center rounded overflow-hidden">
+                            <div class="position-relative">
+                                <div class="team-img">
+                                    <img class="img-fluid w-100" src="img/team-1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column bg-primary text-center py-4">
+                                <h5 class="font-weight-bold">Contigo Mamá</h5>
+                                <p class="text-white m-0">Campaña de Créditos</p>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column text-center rounded overflow-hidden">
+                            <div class="position-relative">
+                                <div class="team-img">
+                                    <img class="img-fluid w-100" src="img/team-2.jpg" alt="">
+                                </div>
+                                
+                            </div>
+                            <div class="d-flex flex-column bg-primary text-center py-4">
+                                <h5 class="font-weight-bold">Tasamáx</h5>
+                                <p class="text-white m-0">Campaña de Ahorros</p>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column text-center rounded overflow-hidden">
+                            <div class="position-relative">
+                                <div class="team-img">
+                                    <img class="img-fluid w-100" src="img/team-3.jpg" alt="">
+                                </div>
+                                
+                            </div>
+                            <div class="d-flex flex-column bg-primary text-center py-4">
+                                <h5 class="font-weight-bold">Todos Vuelven</h5>
+                                <p class="text-white m-0">Campaña de Aportes Extraordinarios</p>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column text-center rounded overflow-hidden">
+                            <div class="position-relative">
+                                <div class="team-img">
+                                    <img class="img-fluid w-100" src="img/team-4.jpg" alt="">
+                                </div>
+                                
+                            </div>
+                            <div class="d-flex flex-column bg-primary text-center py-4">
+                                <h5 class="font-weight-bold">Contigo Mamá</h5>
+                                <p class="text-white m-0">Designation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
 
-      
-  </body>
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid bg-testimonial py-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-7 pt-lg-5 pb-5">
+                    <h6 class="text-secondary font-weight-semi-bold text-uppercase mb-3">Nuestros Socios Dicen</h6>
+                    <h1 class="section-title text-white mb-5">Nuestros Socios</h1>
+                    <div class="owl-carousel testimonial-carousel position-relative">
+                        <div class="d-flex flex-column text-white">
+                            <div class="d-flex align-items-center mb-3">
+                                <img class="img-fluid" src="img/testimonial-1.jpg" alt="">
+                                <div class="ml-3">
+                                    <h5 class="text-primary">Client Name</h5>
+                                    <i>Profession</i>
+                                </div>
+                            </div>
+                            <p>Es el programa mediante el cual se busca dar financiamiento amigable a las pequeñas y mediana empresas del país y generar de esta forma su reactivación.</p>
+                        </div>
+                        <div class="d-flex flex-column text-white">
+                            <div class="d-flex align-items-center mb-3">
+                                <img class="img-fluid" src="img/testimonial-2.jpg" alt="">
+                                <div class="ml-3">
+                                    <h5 class="text-primary">Client Name</h5>
+                                    <i>Profession</i>
+                                </div>
+                            </div>
+                            <p>Es el programa mediante el cual se busca dar financiamiento amigable a las pequeñas y mediana empresas del país y generar de esta forma su reactivación.</p>
+                        </div>
+                        <div class="d-flex flex-column text-white">
+                            <div class="d-flex align-items-center mb-3">
+                                <img class="img-fluid" src="img/testimonial-3.jpg" alt="">
+                                <div class="ml-3">
+                                    <h5 class="text-primary">Client Name</h5>
+                                    <i>Profession</i>
+                                </div>
+                            </div>
+                            <p>Es el programa mediante el cual se busca dar financiamiento amigable a las pequeñas y mediana empresas del país y generar de esta forma su reactivación.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5" style="min-height: 400px;">
+                    <div class="position-relative h-100 rounded overflow-hidden">
+                        <img class="position-absolute w-100 h-100" src="img/testimonial.jpg" style="object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- Blog Start -->
+    <div class="container-fluid pt-5">
+        <div class="container pt-5">
+            <div class="row align-items-end mb-4">
+                <div class="col-lg-6">
+                    <h6 class="text-secondary font-weight-semi-bold text-uppercase mb-3">Últimas Noticias</h6>
+                    <h1 class="section-title mb-3">Cooperativa Santa Catalina informa</h1>
+                </div>
+                <div class="col-lg-6">
+                    <h4 class="font-weight-normal text-muted mb-3">Es el programa mediante el cual se busca dar financiamiento amigable a las pequeñas y mediana empresas del país y generar de esta forma su reactivación.</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded w-100" src="img/blog-1.jpg" alt="">
+                        <div class="blog-date">
+                            <h4 class="font-weight-bold mb-n1">01</h4>
+                            <small class="text-white text-uppercase">Mayo</small>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-2">
+                        <a class="text-secondary text-uppercase font-weight-medium" href="">Admin</a>
+                        <span class="text-primary px-2">|</span>
+                        <a class="text-secondary text-uppercase font-weight-medium" href="">Noticias</a>
+                    </div>
+                    <h5 class="font-weight-medium mb-2">Iniciamos la Campaña Contigo Mamá</h5>
+                    <p class="mb-4">Bienvenidos al Blog informativo de la Cooperativa Santa Catalina</p>
+                    <a class="btn btn-sm btn-primary py-2" href="">Leer más</a>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded w-100" src="img/blog-2.jpg" alt="">
+                        <div class="blog-date">
+                            <h4 class="font-weight-bold mb-n1">01</h4>
+                            <small class="text-white text-uppercase">May</small>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-2">
+                        <a class="text-secondary text-uppercase font-weight-medium" href="">Admin</a>
+                        <span class="text-primary px-2">|</span>
+                        <a class="text-secondary text-uppercase font-weight-medium" href="">Noticias</a>
+                    </div>
+                    <h5 class="font-weight-medium mb-2">Iniciamos la Campaña Contigo Mamá</h5>
+                    <p class="mb-4">Bienvenidos al Blog informativo de la Cooperativa Santa Catalina</p>
+                    <a class="btn btn-sm btn-primary py-2" href="">Leer más</a>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded w-100" src="img/blog-3.jpg" alt="">
+                        <div class="blog-date">
+                            <h4 class="font-weight-bold mb-n1">01</h4>
+                            <small class="text-white text-uppercase">May</small>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-2">
+                        <a class="text-secondary text-uppercase font-weight-medium" href="">Admin</a>
+                        <span class="text-primary px-2">|</span>
+                        <a class="text-secondary text-uppercase font-weight-medium" href="">Noticias</a>
+                    </div>
+                    <h5 class="font-weight-medium mb-2">Iniciamos la Campaña Contigo Mamá</h5>
+                    <p class="mb-4">Bienvenidos al Blog informativo de la Cooperativa Santa Catalina</p>
+                    <a class="btn btn-sm btn-primary py-2" href="">Leer más</a>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded w-100" src="img/blog-3.jpg" alt="">
+                        <div class="blog-date">
+                            <h4 class="font-weight-bold mb-n1">01</h4>
+                            <small class="text-white text-uppercase">May</small>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-2">
+                        <a class="text-secondary text-uppercase font-weight-medium" href="">Admin</a>
+                        <span class="text-primary px-2">|</span>
+                        <a class="text-secondary text-uppercase font-weight-medium" href="">Noticias</a>
+                    </div>
+                    <h5 class="font-weight-medium mb-2">Iniciamos la Campaña Contigo Mamá</h5>
+                    <p class="mb-4">Bienvenidos al Blog informativo de la Cooperativa Santa Catalina</p>
+                    <a class="btn btn-sm btn-primary py-2" href="">Leer más</a>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded w-100" src="img/blog-3.jpg" alt="">
+                        <div class="blog-date">
+                            <h4 class="font-weight-bold mb-n1">01</h4>
+                            <small class="text-white text-uppercase">May</small>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-2">
+                        <a class="text-secondary text-uppercase font-weight-medium" href="">Admin</a>
+                        <span class="text-primary px-2">|</span>
+                        <a class="text-secondary text-uppercase font-weight-medium" href="">Noticias</a>
+                    </div>
+                    <h5 class="font-weight-medium mb-2">Iniciamos la Campaña Contigo Mamá</h5>
+                    <p class="mb-4">Bienvenidos al Blog informativo de la Cooperativa Santa Catalina</p>
+                    <a class="btn btn-sm btn-primary py-2" href="">Leer más</a>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded w-100" src="img/blog-3.jpg" alt="">
+                        <div class="blog-date">
+                            <h4 class="font-weight-bold mb-n1">01</h4>
+                            <small class="text-white text-uppercase">May</small>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-2">
+                        <a class="text-secondary text-uppercase font-weight-medium" href="">Admin</a>
+                        <span class="text-primary px-2">|</span>
+                        <a class="text-secondary text-uppercase font-weight-medium" href="">Noticias</a>
+                    </div>
+                    <h5 class="font-weight-medium mb-2">Iniciamos la Campaña Contigo Mamá</h5>
+                    <p class="mb-4">Bienvenidos al Blog informativo de la Cooperativa Santa Catalina</p>
+                    <a class="btn btn-sm btn-primary py-2" href="">Leer más</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Blog End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white mt-5 py-5 px-sm-3 px-md-5">
+        <div class="row pt-5">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <a href="index.html" class="navbar-brand">
+                    <h1 class="m-0 mt-n3 display-4 text-primary">CSC</h1>
+                </a>
+                <p>Somos una institución de intermediación financiera sin fines de lucro.</p>
+                <h5 class="font-weight-semi-bold text-white mb-2">Horarios:</h5>
+                <p class="mb-1">Lun-Vie: 8.15 AM - 5.45 PM</p>
+                <p class="mb-1">Sab: 9.15 AM - 12.45 PM</p>
+                <p class="mb-0">Dom: Cerrado</p>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="font-weight-semi-bold text-primary mb-4">Estamos en</h4>
+                <p><i class="fa fa-map-marker-alt text-primary mr-2"></i>Calle Moquegua 831-Moquegua</p>
+                <p><i class="fa fa-phone-alt text-primary mr-2"></i>+51 53 461197</p>
+                <p><i class="fa fa-envelope text-primary mr-2"></i>contacto@csc.com.pe</p>
+                <div class="d-flex justify-content-start mt-4">
+                    <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-light btn-social" href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="font-weight-semi-bold text-primary mb-4">Enlaces</h4>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Inicio</a>
+                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Nosotros</a>
+                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Servicios</a>
+                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Campañas</a>
+                    <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Contactanos</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="font-weight-semi-bold text-primary mb-4">Noticias de Interés</h4>
+                <p>Entérate de las últimas noticias de tu Cooperativa.</p>
+                <div class="w-100">
+                    <div class="input-group">
+                        <input type="text" class="form-control border-0" style="padding: 25px;" placeholder="Your Email">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary px-4">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: #3E3E4E !important;">
+        <div class="row">
+            <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
+                <p class="m-0 text-white">&copy; <a href="#">Cooperativa Santa Catalina </a>. Todos los derechos reservados.</a>
+                </p>
+            </div>
+            <div class="col-lg-6 text-center text-md-right">
+                <ul class="nav d-inline-flex">
+                    <li class="nav-item">
+                        <a class="nav-link text-white py-0" href="#">Privacidad</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white py-0" href="#">Términos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white py-0" href="#">Preguntas Frecuentes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white py-0" href="#">Ayuda</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary px-3 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
 </html>
